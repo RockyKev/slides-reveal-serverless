@@ -1,15 +1,51 @@
 body {
-  background: lightblue;
-  background-color: lightblue;
+  background: #0a0a0a;
+  background: -moz-radial-gradient(
+    center,
+    circle cover,
+    #464646 0%,
+    #0a0a0a 100%
+  );
+  background: -webkit-gradient(
+    radial,
+    center center,
+    0px,
+    center center,
+    100%,
+    color-stop(0%, #464646),
+    color-stop(100%, #0a0a0a)
+  );
+  background: -webkit-radial-gradient(
+    center,
+    circle cover,
+    #464646 0%,
+    #0a0a0a 100%
+  );
+  background: -o-radial-gradient(
+    center,
+    circle cover,
+    #464646 0%,
+    #0a0a0a 100%
+  );
+  background: -ms-radial-gradient(
+    center,
+    circle cover,
+    #464646 0%,
+    #0a0a0a 100%
+  );
+  background: radial-gradient(center, circle cover, #464646 0%, #0a0a0a 100%);
+  background-color: #333;
 }
 
 .reveal {
-  color: black;
+  color: white;
 }
 
+.reveal h1,
 .reveal h2,
-.reveal h3 {
-  color: black;
+.reveal h3,
+.reveal h4 {
+  color: white;
 }
 
 .image-default {
@@ -25,4 +61,27 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+}
+.flex-side {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.small-text {
+  font-size: 50%;
+  color: grey;
+}
+
+.strikethru {
+  text-decoration: line-through;
+}
+
+.color-grey {
+  color: lightslategray;
+}
+
+.color-primary {
+  color: white;
 }
