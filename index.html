@@ -33,6 +33,16 @@
   <body>
     <div class="reveal">
       <div class="slides">
+
+        <div id="hidden" style="display:none;">
+          <div id="header">
+              <!-- <div id="header-left">HEADER-LEFT</div>
+              <div id="header-right">HEADER-RIGHT</div> -->
+              <div id="footer-left">https://rockykev.github.io/slides-reveal-css/ - Spokane Front End Dev Feb 2020</div>
+          </div>
+      </div>
+
+
         <section>
           <h2>CSS for Everybody</h2>
           <p>
@@ -372,11 +382,12 @@
 
           <section>
             <img src="images/Bootstrap-Benefits.png" style="background-color: white;"/>
-            <a href="https://getbootstrap.com/docs/4.0/examples/">examples</a>
+            <a href="https://getbootstrap.com/docs/4.0/examples/" target="_blank">examples</a>
           </section>
 
           <section>
             <img src="images/problem-frameworks.png" />
+            <a href="https://www.mockplus.com/blog/post/css-framework" target="_blank">more options</a>
           </section>
 
         </section>
@@ -426,5 +437,19 @@
         ]
       });
     </script>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script type="text/javascript">
+    // 3. On Reveal.js ready event, copy header/footer <div> into each `.slide-background` <div>
+    var header = $('#header').html();
+    if ( window.location.search.match( /print-pdf/gi ) ) {
+        Reveal.addEventListener( 'ready', function( event ) {
+            $('.slide-background').append(header);
+        });
+    }
+    else {
+        $('div.reveal').append(header);
+   }
+</script>
   </body>
 </html>

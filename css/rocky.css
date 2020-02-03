@@ -85,3 +85,20 @@ body {
 .color-primary {
   color: white;
 }
+
+#header-left {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+#header-right {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+}
+#footer-left {
+  position: absolute;
+  bottom: 0%;
+  font-size: 50%;
+  left: 0%;
+}
