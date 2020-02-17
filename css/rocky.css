@@ -102,3 +102,8 @@ body {
   font-size: 50%;
   left: 0%;
 }
+
+#history strong {
+  text-transform: uppercase;
+  text-decoration: underline;
+}
