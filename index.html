@@ -33,391 +33,354 @@
   <body>
     <div class="reveal">
       <div class="slides">
-
         <div id="hidden" style="display:none;">
           <div id="header">
-              <!-- <div id="header-left">HEADER-LEFT</div>
+            <!-- <div id="header-left">HEADER-LEFT</div>
               <div id="header-right">HEADER-RIGHT</div> -->
-              <div id="footer-left">https://rockykev.github.io/slides-reveal-css/ - Spokane Front End Dev Feb 2020</div>
+            <div id="footer-left">
+              https://rockykev.github.io/slides-reveal-css/ - Spokane Front End
+              Dev Feb 2020
+            </div>
           </div>
-      </div>
-
+        </div>
 
         <section>
-          <h2>CSS for Everybody</h2>
+          <h2>Javascript Past/Present/Future</h2>
           <p>
-            FEB 2020 Presentation
+            Feb 2020 Presentation
           </p>
-          <p> Reminder rocky, open the links first.</p>
-          <p> <a href="https://rupl.github.io/unfold/" target="_blank"> introduction </a></p>
+          <img src="images/stateofjs2019tshirt1.jpg" style="width:50%" />
         </section>
 
         <section>
           <h2>Always looking for speakers/vteers</h2>
           <p>
-            This is the easiest bulletpoint to add to your resume.
+            Gain mastery by teaching it.
           </p>
           <img src="images/want-you.jpg" style="width:50%" />
         </section>
 
         <section>
           <h2>How I present</h2>
-
-          <img src="images/bored.jpeg" />
         </section>
 
         <section id="fragments">
-          <h2>tl;dr: I'm here for 🍕. I know CSS Already. Impress me.</h2>
+          <h2>tl;dr: What are we covering?</h2>
           <ul>
-            <li class="fragment">Code In the Dark</li>
-            <li class="fragment">A bit the history of CSS</li>
-            <li class="fragment">How devs use CSS</li>
-            <li class="fragment">Modern problems that CSS solved</li>
-            <li class="fragment">Learning more advanced CSS</li>
+            <li class="fragment">Quick History of JS</li>
+            <li class="fragment">How JS became so Popular</li>
+            <li class="fragment">What JS is being used for now</li>
+            <li class="fragment">The future of JS</li>
           </ul>
         </section>
 
-        <!-- KILLER OPENER -->
-        <section>
+        <!-- QUICK HISTORY         -->
+       <section>
           <section>
-            <img src="images/backend-meme.png" />
+            <p>
+              Shamelessly stolen from
+              https://dev.to/codediodeio/the-weird-history-of-javascript-2bnb
+            </p>
+
+            <p>
+              Early 1995. Web designers needed a "glue" language to make their
+              sites more dynamic.
+            </p>
           </section>
 
           <section>
-            <img src="images/chat.png" />
+            <p>
+              May 1995. Brendan Eich, under pressure to produce a prototype
+              quickly with the threat of Microsoft beating them to the punch. He
+              creates a language called Mocha.
+            </p>
+            <p>
+              September 1995. It is renamed to LiveScript for marketing reasons.
+            </p>
+            <p>
+              December 1995. It is renamed to JavaScript for marketing reasons.
+            </p>
           </section>
 
           <section>
-            <img src="images/codeinthedark_hero.png" />
+            <p>
+              August 1996. Microsoft reverse engineers JavaScript and ships it
+              with Internet Explorer 3, but calls it JScript for marketing legal
+              reasons.
+            </p>
           </section>
 
           <section>
-            <div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/153b8a5792904bff980764d35dbde311" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
-            <p class="small-text">Don't forget the weird dance house music for flavor.👅 </p> 
+            <img src="images/microsoft-steals.gif" />
+            <p>
+              November 1996. Microsoft is crushing their competition with an
+              internal culture of "embrace, extend, and exterminate". Netscape
+              submits documentation to standardize JavaScript with ECMA
+              International. It gets finalize in June 1997.
+            </p>
           </section>
 
           <section>
-            <img src="images/nes-controller.png" />
+          <p>
+              March 2000. Microsoft's Internet Explorer is dominating with
+              approx 90% of the browser market share. They contribute to
+              ECMAScript, but mostly play by their own rules, shipping new
+              features for JS in their browser. Most notably, AJAX sets the
+              stage for the single page applications of the future.
+            </p>
+          </section>
+
+            <section>
+            <p>
+              August 2006. John Resig creates JQuery. The library addresses
+              extremely-frustrating issues related to cross-browser
+              compatibility that existed at the time. It also provides a
+              well-documented terse API that sets a new standard for the
+              "developer experience".
+            </p>
           </section>
 
           <section>
-            <h2>WOAH 🍄</h2>
-            <ol>
-              <li><a href="https://uglyduck.ca/super-mario-blocks-css/" target="_blank">Checkbox</a> </li>
-              <li><a href="http://cssdeck.com/labs/pure-css3-super-mario-bitmap-graphics" target="_blank">Tail</a> </li>
-              <li> <a href="https://codepen.io/alcidesqueiroz/pen/MVJEwd" target="_blank"> World</a> </li>
-              <li> <a href="https://codepen.io/ivorjetski/details/xMJoYO" target="_blank"> SCSS</a> </li>
-              <li><a href="https://codepen.io/deryatanriverdi88/pen/dyPBNzW?editors=1100" target="_blank">Finally.</a></li>
-            </ol>
+          <p>
+              September 2008. Google releases the Chrome Browser and
+              open-sources its high-performance runtime, called the V8 engine.
+              It opens the door to new possibilities...
+            </p>
           </section>
 
           <section>
-            <img src="images/codepen.png" />
-          </section>
+            <p>
+              May 2009. Javascript goes Full Stack. Ryan Dahl develops NodeJS
+              with Google's V8 project. It gives rise to the JavaScript
+              Everywhere paradigm.
+            </p>
+            </section>
 
-        </section>
-
-
-        <!-- CSS HISTORY -->
-        <section>
-          <section>
-            <h2> CSS is... </h2>
-            <p> CSS is a styling language, so its building blocks are different from the classical programming languages. </p>
-            <p class="small-text" style="padding-top: 60px;"> http://amyhissom.com/HTML5-CSS3/history.html <br />
-              https://css-tricks.com/look-back-history-css/ <br />
-              https://www.w3.org/Style/CSS20/history.html<br />
-              https://crossbrowsertesting.com/blog/test-automation/history-of-web-browsers/</p>
-          </section>
-
-          <section>   
-            <h2> CSS history's cast of characters </h2>                    
-
-            <div class="flex-side">
-              <img src="images/w3c.jpg" style="height: 400px"/>
-              <img src="images/browser-icons.jpg" style="height: 400px"/>  
-            </div>
-          </section>
-
-        </section>
-
-   <!-- History CSS -->
-   <section>
-    <section>
-      <img src="images/history-css.png" />
-    </section>
-
-
-        <section>
-          <img src="images/html-1991.png" />
-        </section>
-
-        <section>
-          <img src="images/history-css.png" />
-        </section>
-
-
-
-        <section>
-          <img src="images/html-1996.png" />
-        </section>
-
-        <section>
-          <img src="images/history-css.png" />
-        </section>
-
-
-        <section>
-          <img src="images/html-2001.jpg" />
-        </section>
-
-        <section>
-          <img src="images/history-css.png" />
-        </section>
-
-        <section>
-          <img src="images/html-2002.gif" />
-        </section>
-
-        <section>
-          <img src="images/html-2002-espn.jpg" />
-        </section>
-
-        <section>
-          <img src="images/history-css.png" />
-        </section>
-
-        </section>
-   <!-- VERSIONS CSS -->
-
-        <section>
-          <img src="images/css-versions.png" />
-        </section>
-
-        <!-- REGULAR CSS -->
-        <section>
-          <section>
-            <p> Enough History. </p>
-            <p> Modern CSS uses. Heavily Opinionated. </p>            
-          </section>
-
-          <section>
-            <p> Write it naturally. </p>
-            <img src="images/uses-codepen.png" />
-          </section>
-
-          <section>
-            <p> "Borrow" ideas. </p>
-            <img src="images/uses-rightclickanimation.gif" />
-          </section>
-
-          <section>
-            <p> Get it from a designer. </p>
-            <p><a href="https://xd.adobe.com/view/9427e491-b0d8-47b6-7b91-b72556c549a5-e216/screen/b84ba780-bd6a-4f0a-aa48-b3f22b600837/Design-1/" target="_blank">click</a></p> 
-          </section>
-
-          <section>
-            <p> Grab a pre-built html template </p>
-            <img src="images/uses-colorlib.png" />
-          </section>
-
-          <section>
-            <h1> Make your life easier with... </h1>
-          </section>
-
-          <section>
-            <h2>GENERATORS 🤖</h2>
-            <ol>
-              <li><a href="http://buttonoptimizer.com/" target="_blank">Buttons 🆒 </a> </li>
-              <li><a href="https://www.cssmatic.com/" target="_blank">Gradients/box shadows 📦 </a> </li>
-              <li> <a href="https://html-css-js.com/css/generator/" target="_blank"> Everything else 🌐</a> </li>
-            </ol>
-          </section>
-
-          <section>
-            <img src="images/uses-theresmore.gif" style="width: 200%;"/>
-          </section>
-
-          <section>
-            <img src="images/uses-layout.png" />
-          </section>
-
-          <section>
-            <p class="small-text">🌟https://the-echoplex.net/flexyboxes/🌟</p>
-            <img src="images/uses-flexy.png" />
-          </section>
-
-          <section>
-            <p  class="small-text">🌟https://grid.layoutit.com/🌟</p>
-            <img src="images/uses-grid.png" />
-          </section>
-
-          <section>
-
-            <img src="images/css-is-easy.gif" style="width: 200%;" />
-          </section>
-
-        </section>
-
-        <!-- LIFE DANDY NOW? -->
-        
-        <section>
-          <p>Is that it with CSS?</p>
-          <img src="images/problem-lifeisgood.jpg" />
-        </section>
-
-
-        <!-- SOLVING THE BROWSER PROBLEM -->
-        <section>
-          <section>
-            <p>But wait -- what happened in the late 2000s?</p>
-          </section>
-
-          <section>
-            <img src="images/problem-phones.jpg" />
-          </section>
-
-          <section>
-            <img src="images/problem-breakpoints.png" />
-          </section>
-
-          <section>
-            <p> Responsive Design </p>
-            <pre><code>
-              @media only screen and (max-width: 600px){
-              body {
-                background-color: lightblue;
-              }
-            }</code></pre>
+            <section>
+            <p>
+              December 2009. Exactly 10 years after ES3 we finally see a new
+              version of JavaScript - ES5. It adds a conservative set of new
+              features based on ES3.1 like strict mode, accessors, and JSON.
+            </p>
+            </section>
             
+            <section>
+            <p>
+              October 2010. Both AngularJS and Backbone frameworks see their
+              initial releases. They become extremely popular for different
+              reasons - Angular was declarative and opinionated, while backbone
+              was imperative and minimal. This marks the beginning of the modern
+              single page application (SPA) and "framework churn".
+            </p>
+
           </section>
 
           <section>
-            <p> Responsive Design Trends </p>
-            <img src="images/problem-responsive.png" />
+          <p>
+              May 2013. Facebook releases ReactJS. It sees rapid growth in the
+              years ahead solidifies the declarative UI patterns used in many
+              apps today.
+            </p>
+            <img src="images/react-logo.png" style="width:50%"/>
+
           </section>
-
-
-        </section>
-
-        <!-- CSS FOR LARGE CODE BASES -->
-        <section>
-          <section>
-            <p>But wait -- my CSS file is getting confusing.</p>
-          </section>
-
-          <section>
-            <img src="images/problem-bad.png" />
-          </section>
-
-          <section>
-            <img src="images/problem-preprocessors.png" />
-          </section>
-
-          <section>
-            <p>CSS preprocessors are scripting languages that extend the default capabilities of CSS. They offer:</p>
-          <ul>
-            <li class="fragment">Nesting</li>
-            <li class="fragment">mixins</li>
-            <li class="fragment">Functions</li>
-            <li class="fragment">conditionals</li>
-            <li class="fragment">loops</li>
-            <li class="fragment strikethru">variables</li>
-            <li class="fragment strikethru">calcs and imports</li>
-            <li class="fragment strikethru">imports</li>            
-          </ul>
-        </section>
 
         <section>
-          <p>CSS preprocessors are scripting languages that extend the default capabilities of CSS. They offer:</p>
-        <ul class="color-grey">
-          <li class="color-primary">Nesting</li>
-          <li class="color-primary">mixins</li>
-          <li>Functions</li>
-          <li>conditionals</li>
-          <li>loops</li>
-          <li class="strikethru">variables</li>
-          <li class="strikethru">calcs</li>
-          <li class="strikethru">imports</li>            
-        </ul>
-      </section>
-
-      <section>
-        <img src="images/problem-sass-example.png" />
-      </section>
-
-      <section>
-        <img src="images/problem-sass-mixins.png" />
-      </section>
-
-
-
-      <section>
-        <p>CSS preprocessors are scripting languages that extend the default capabilities of CSS. They offer:</p>
-      <ul class="color-grey">
-        <li>Nesting</li>
-        <li>mixins</lions</li>
-        <li>Functions</li>
-        <li>conditionals</li>
-        <li>loops</li>
-        <li class="strikethru color-primary">variables</li>
-        <li class="strikethru color-primary">calcs and imports</li>
-        <li class="strikethru color-primary">imports</li>            
-      </ul>
-    </section>
-
-
-        </section>
-
-        <!-- WHY ARE WE REINVENTING THE WHEEL -->
-        <section>
-          <section>
-            <p>But wait -- responsive design, containers, etc...? </p>
-            <p>If every site is the same, why are we reinventing the wheel? </p>
-            <img src="images/uses-layout.png" />
+            <p>
+              Dozens of other frontend, backend, and fullstack frameworks emerge
+              roughly around this time period, like Angular, Ember, Meteor,
+              Sails, Vue, Svelte, Mithril, Knockout, Polymer, just to name a
+              few.
+            </p>
+            <img src="images/jsframework.png" style="width:50%"/>
           </section>
 
           <section>
-            <p> You don't have to!</p>
-          </section>
-
-          <section>
-            <img src="images/Bootstrap-Benefits.png" style="background-color: white;"/>
-            <a href="https://getbootstrap.com/docs/4.0/examples/" target="_blank">examples</a>
-          </section>
-
-          <section>
-            <img src="images/problem-frameworks.png" />
-            <a href="https://www.mockplus.com/blog/post/css-framework" target="_blank">more options</a>
-          </section>
-
-        </section>
-
-        <!-- ADVANCED CSS -->
-        <section>
-
-          <section>
-            <img src="images/chat.png" />
-          </section>
-
-          <section id="fragments">
-            <h2>Krunal: Then maybe get good!</h2>
             <ul>
-              <li class="fragment"> <a href="http://www.flexboxdefense.com/" target="_blank">Flexbox Defense🚀</a> </li>
-              <li class="fragment"><a href="https://flexboxfroggy.com/" target="_blank">Flexbox Froggy🐸</a> </li>
-              <li class="fragment"><a href="https://mastery.games/p/flexbox-zombies" target="_blank">Flexbox Zombies🧟</a></li>
-              <li class="fragment"><a href="https://cssgridgarden.com/" target="_blank">Grid Garden🌼</a></li>
-              <li class="fragment"><a href="https://gridcritters.com/" target="_blank">Grid Critters🐞</a></li>
-              <li class="fragment"><a href="http://flukeout.github.io/" target="_blank">CSS Diner🍽️</a></li>
+              <li>2015 - present. A ton of new features land in ES6 changing the way
+              modern JS devs write their code.</li>
+              <li>
+                2015. let/const, arrow
+                functions, classes, promises. Transpilers like Babel and Typescript.
+              </li>
+              <li>
+                2016 ES7. We get minor changes, like Array.includes(). Most
+                importantly, ECMA is now making small changes on an annual basis.
+              </li>
+              <li>2017 ES8. We get Async Await!</li>
+              <li>
+                2018 ES9. We get Rest/Spread syntax!
+              </li>
             </ul>
           </section>
+        </section>
+
+          <!-- HOW DID JS BECOME SO POPULAR         -->
+        <section>
+          <section>
+            <img src="images/top-languages.png" />
+            <a href="https://octoverse.github.com/#top-languages" target="_blank">Github Octoverse</a>
+          </section>
 
           <section>
-            <img src="images/codeinthedark_hero.png" />
+            <p>Laurie Voss</p>
+            <img src="images/laurie-voss.jpg" />
+          </section>
+
+          <section>
+            <h3> How did JS become so popular </h3>
+            <ul>
+              <li class="fragment">
+                Google maps and AJAX. AJAX made Javascript mainstream again,
+                inspired by Gmail (2004) and google maps (2005).
+              </li>
+              <li class="fragment">
+                NodeJS introduced a single language for full-stack development.
+              </li>
+              <li class="fragment">NPM packages.</li>
+              <li class="fragment">
+                Frameworks that follow a 'write once work everywhere policy'.
+              </li>
+            </ul>
+          </section>
+        </section>
+        <!-- What can JS do now?         -->
+
+        <section>
+          <section>
+            <h1>What can Javascript do now?</h1>
+          </section>
+
+          <section>
+            <p>Integrate with Sharepoint and Google Suite products</p>
+
+            <img src="images/sharepoint.gif" />
+            <img src="images/googlesheets.jpg" />
+          </section>
+
+          <section>
+            <h1>QR Codes</h1>
+            <img src="images/qr.png" />
+          </section>
+
+          <section>
+            <h1>Desktop Apps</h1>
+            <a href="https://www.electronjs.org/" target="_blank">ElectronJS</a>
+          </section>
+
+          <section>
+            <h1>Machine Learning</h1>
+            <a href="https://tfjsmnist.azurewebsites.net/" target="_blank"
+              >click</a
+            >
+          </section>
+
+          <section>
+            <h3>Machine learning with dick pics</h3>
+            <p><img src="images/charlie.jpg" /></p>
+            <a
+              href="https://www.youtube.com/watch?v=xB8lkqxQluw&list=PLLiioAbFTbKPR9XPV8g-gHu5q8w7g7mlH&index=24&t=1404s"
+            >
+              video
+            </a>
+          </section>
+
+          <section>
+            <h1>Game development</h1>
+            <img src="images/pixijs.jpg" />
+          </section>
+
+          <section>
+            <h1>Game development</h1>
+            <img src="images/phaser.jpg" />
+          </section>
+
+          <section>
+            <h1>3D in the browser</h1>
+            <a
+              href="https://rockykev.github.io/threejs-testanimation/index-live"
+              target="_blank"
+              >example</a
+            >, threejs
+          </section>
+
+          <section>
+            <h1>Block Chain</h1>
+            <img src="images/blockchain.gif" />
+            <a
+              href="https://github.com/nambrot/blockchain-in-js"
+              target="_blank"
+              >link</a
+            >
+          </section>
+
+          <section>
+            <h1>
+              Mobile Development
+            </h1>
+            <a
+              href="https://www.javascripting.com/mobile-and-touch/"
+              target="_blank"
+              >list
+            </a>
+          </section>
+
+          <section>
+            <h1>Occulus Rift</h1>
+            <img src="images/React360.png" />
+            <p>
+              
+              <a href="https://developer.oculus.com/documentation/oculus-browser/react360-intro/" target="_blank">Docs</a>,
+              <a href="https://www.lynda.com/learning-paths/Web/build-a-virtual-reality-application-with-react" target="_blank">Lynda</a>
+            </p>
+
+          </section>
+
+          <section>
+            <h1>Drones</h1>
+            <img src="images/drone.png" />
+            <p> <a href="https://www.youtube.com/watch?v=JzFvGf7Ywkk" target="_blank">Wes</a> <a href="https://cascadiajs.com/talks/controlling-a-swarm-of-drones-with-javascript/" target="_blank">another talk</a>, <a href="https://github.com/wesbos/javascript-drones" target="_blank">getting started</a></p>
+          </section>
+
+          <section>
+            <h1>Let's not forget...</h1>
+          </section>
+
+
+          <section>
+            <h1>POPUPS!</h1>
+            <img src="images/popups.gif" />
           </section>
 
 
         </section>
 
+        <!-- JS FUTURE         -->
+        <section>
+          <section>
+            <h1>The future of JS?</h1>
+            <a
+              href="https://github.com/tc39/proposals/blob/master/finished-proposals.md"
+              target="_blank"
+              >Proposals
+            </a>
+          </section>
+
+          <section>
+            <h3>Via Richard Feldman</h3>
+            <a href="https://www.youtube.com/watch?v=24tQRwIRP_w">link</a>
+            <ul>
+              <li>Typescript will continue to grow<a href="https://madnight.github.io/githut/#/pull_requests/2019/4" target="_blank">growth</a></li>
+              <li>Web Assembly (<a href="https://www.figma.com/blog/webassembly-cut-figmas-load-time-by-3x/" target="_blank">Figma</a> and <a href="http://www.wasmrocks.com/topic/330/doom-3-running-in-the-browser-using-emscripten-webassembly" target="_blank">Doom</a>)</li>
+              <li>
+                That NPM will still be a major force (if not NPM then Github
+                Packages or Yarn) <a href="https://en.wikipedia.org/wiki/Npm_(software)" target="_blank">wiki</a>
+              </li>
+            </ul>
+          </section>
+        </section>
+      </div>
+    </div>
 
     <script src="js/reveal.js"></script>
     <script>
@@ -438,18 +401,17 @@
       });
     </script>
 
-<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-<script type="text/javascript">
-    // 3. On Reveal.js ready event, copy header/footer <div> into each `.slide-background` <div>
-    var header = $('#header').html();
-    if ( window.location.search.match( /print-pdf/gi ) ) {
-        Reveal.addEventListener( 'ready', function( event ) {
-            $('.slide-background').append(header);
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript">
+      // 3. On Reveal.js ready event, copy header/footer <div> into each `.slide-background` <div>
+      var header = $("#header").html();
+      if (window.location.search.match(/print-pdf/gi)) {
+        Reveal.addEventListener("ready", function(event) {
+          $(".slide-background").append(header);
         });
-    }
-    else {
-        $('div.reveal').append(header);
-   }
-</script>
+      } else {
+        $("div.reveal").append(header);
+      }
+    </script>
   </body>
 </html>
