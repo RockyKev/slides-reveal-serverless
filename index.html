@@ -38,24 +38,29 @@
             <!-- <div id="header-left">HEADER-LEFT</div>
               <div id="header-right">HEADER-RIGHT</div> -->
             <div id="footer-left">
-              https://rockykev.github.io/slides-reveal-js/ - Spokane Front-end
-              Dev Feb 2020
+              https://rockykev.github.io/slides-reveal-serverless/ - Spokane
+              Front-end Dev Feb 2020
             </div>
           </div>
         </div>
 
         <section>
-          <h3>Javascript Past/Present/Future</h3>
+          <h3>Getting Comfortable with Serverless</h3>
           <p>
-            Feb 2020 Presentation
+            March 2020 Presentation
           </p>
-          <img src="images/stateofjs2019tshirt1.jpg" style="width:50%" />
+          <img src="images/serverless-meme.jpg" style="width:50%" />
+        </section>
+
+        <section>
+          <h2>If you want to follow along....</h2>
+          <img src="images/get-to-aws.png" style="width:50%" />
         </section>
 
         <section>
           <h2>Always looking for speakers/vteers</h2>
           <p>
-            Gain mastery by teaching it.
+            Put this on your tinder profile.
           </p>
           <img src="images/want-you.jpg" style="width:50%" />
         </section>
@@ -65,187 +70,253 @@
         </section>
 
         <section id="fragments">
-          <h2>tl;dr: What are we covering?</h2>
+          <h2>tl;dr 🍕: What are we covering?</h2>
           <ul>
-            <li class="fragment">Quick History of JS</li>
-            <li class="fragment">How JS became so Popular</li>
-            <li class="fragment">What JS is being used for now</li>
-            <li class="fragment">The future of JS</li>
+            <li class="fragment">What is Serverless 🌩️</li>
+            <li class="fragment">Before serverless 😭</li>
+            <li class="fragment">AWS and Lambda λ</li>
+            <li class="fragment">
+              Web development (Github, Netlify, AWS and Heroku)
+            </li>
           </ul>
         </section>
 
-        <!-- QUICK HISTORY         -->
-       <section id="history">
+        <!-- WHAT IS SERVERLESS         -->
+
+        <section id="history">
           <section>
-
-
             <p>
-              Early 1995. Web designers needed a "glue" language to make their
-              sites more dynamic.
+              Serverless computing is a cloud-computing execution model in which
+              the cloud provider runs the server, and dynamically manages the
+              allocation of machine resources. Pricing is based on the actual
+              amount of resources consumed by an application,
+              <strong>rather than on pre-purchased units of capacity.</strong>
             </p>
             <p class="small-text">
               Shamelessly stolen from
-              https://dev.to/codediodeio/the-weird-history-of-javascript-2bnb
+              https://en.wikipedia.org/wiki/Serverless_computing
             </p>
           </section>
 
           <section>
             <p>
-              <strong>May 1995.</strong> Brendan Eich, under pressure to produce a prototype
-              quickly with the threat of Microsoft beating them to the punch. He
-              creates a language called Mocha.
+              Normally, you create a server (PHP, Nodejs, Ruby or Python) which
+              interact with a database to fetch information and send it to the
+              Frontend. Then you host this backend server on hosting providers
+              like GoDaddy, AWS or Azure that's running 24 x 7 (even if nobody
+              is using it).
             </p>
             <p>
-              <strong>September 1995.</strong> It is renamed to LiveScript for marketing reasons.
+              You pay for idle time. You also patch bugs, update software, and
+              scale/manage.
             </p>
+          </section>
+
+          <section>
+            <img src="images/lambda-logo.png" />
+            <p>This isn't the half-life symbol.</p>
+          </section>
+
+          <section>
+            <img src="images/lambda-spin.png" />
+            <p class="small-text">Actual representation of AWS Lambda.</p>
+          </section>
+
+          <section>
             <p>
-              <strong>December 1995.</strong> It is renamed to JavaScript for marketing reasons.
+              There's pros and cons.
+            </p>
+          </section>
+
+          <section>
+            <h2>Backend devs...</h2>
+            <p>
+              <img src="images/backend-be-like.jpg" />
+              Serverless for
+              <a
+                href="https://read.acloud.guru/serverless-is-a-state-of-mind-717ef2088b42"
+                >Backends read this pros/cons</a
+              >.
+            </p>
+          </section>
+
+          <section>
+            <h2>Frontend devs...</h2>
+            <p>
+              who wants to focus on deploying websites...
+              <img src="images/throw-money.gif" />
             </p>
           </section>
 
           <section>
             <p>
-              <strong>August 1996.</strong> Microsoft reverse engineers JavaScript and ships it
-              with Internet Explorer 3, but calls it JScript for marketing legal
-              reasons.
-            </p>
-          </section>
-
-          <section>
-            <img src="images/microsoft-steals.gif" />
-            <p>
-              <strong>November 1996.</strong> Microsoft is crushing their competition with an
-              internal culture of "embrace, extend, and exterminate". Netscape
-              submits documentation to standardize JavaScript with ECMA
-              International. It gets finalize in June 1997.
-            </p>
-          </section>
-
-          <section>
-          <p>
-              <strong>March 2000.</strong> Microsoft's Internet Explorer is dominating with
-              approx 90% of the browser market share. They contribute to
-              ECMAScript, but mostly play by their own rules, shipping new
-              features for JS in their browser. Most notably, AJAX sets the
-              stage for the single page applications of the future.
-            </p>
-          </section>
-
-            <section>
-            <p>
-              <strong>August 2006.</strong> John Resig creates JQuery. The library addresses
-              extremely-frustrating issues related to cross-browser
-              compatibility that existed at the time. It also provides a
-              well-documented terse API that sets a new standard for the
-              "developer experience".
-            </p>
-          </section>
-
-          <section>
-          <p>
-            <strong>September 2008.</strong> Google releases the Chrome Browser and
-              open-sources its high-performance runtime, called the V8 engine.
-              It opens the door to new possibilities...
+              “Focus on your application, not the infrastructure”. ~Faizan
+              Bashir
+              (https://hackernoon.com/what-is-serverless-architecture-what-are-its-pros-and-cons-cc4b804022e9)
             </p>
           </section>
 
           <section>
             <p>
-              <strong>May 2009.</strong> Javascript goes Full Stack. Ryan Dahl develops NodeJS
-              with Google's V8 project. It gives rise to the JavaScript
-              Everywhere paradigm.
+              So serverless is just an extension of the Cloud. Cloud is just
+              someone elses computer. They are handling all of the hardware
+              configuration and slicing the computer up into different parts so
+              that everyone can use it in their own little piece. Serverless is
+              just taking that to the next level. In the Cloud you dont have to
+              worry about a lot of hardware problems but you still have to worry
+              about all sorts of configuration problems. In Serverless you no
+              don’t have to worry about hardware issues or server configuration
+              stuff. This of course creates its own issues. if you need that
+              level of control over your application then its probably not for
+              what you are doing.
             </p>
-            </section>
-
-            <section>
-            <p>
-              <strong>December 2009.</strong> Exactly 10 years after ES3 we finally see a new
-              version of JavaScript - ES5. It adds a conservative set of new
-              features based on ES3.1 like strict mode, accessors, and JSON.
-            </p>
-            </section>
-            
-            <section>
-            <p>
-              <strong>October 2010.</strong> Both AngularJS and Backbone frameworks see their
-              initial releases. They become extremely popular for different
-              reasons - Angular was declarative and opinionated, while backbone
-              was imperative and minimal. This marks the beginning of the modern
-              single page application (SPA) and "framework churn".
-            </p>
-
+            <p>via Adam Martinek</p>
           </section>
+        </section>
 
-          <section>
-          <p>
-            <strong>May 2013.</strong> Facebook releases ReactJS. It sees rapid growth in the
-              years ahead solidifies the declarative UI patterns used in many
-              apps today.
-            </p>
-            <img src="images/react-logo.png" style="width:50%"/>
-
-          </section>
-
+        <!-- PLZ EXPLAIN         -->
         <section>
+          <section>
+            <img src="images/cool-cool.gif" />
+          </section>
+
+          <section>
+            <p>Can you give me some examples? (Explain like I'm 5)</p>
+          </section>
+
+          <section>
+            <p>Via Syntax Podcast:</p>
             <p>
-              Dozens of other frontend, backend, and fullstack frameworks emerge
-              roughly around this time period, like Angular, Ember, Meteor,
-              Sails, Vue, Svelte, Mithril, Knockout, Polymer, just to name a
-              few.
+              <a
+                href="https://codepen.io/rockykev/pen/QWbppvV?editors=0100"
+                target="_blank"
+                >Example</a
+              >
             </p>
-            <img src="images/jsframework.png" style="width:50%"/>
+          </section>
+
+          <section>
+            <p>Via Syntax Podcast:</p>
+            <p>
+              <a
+                href="https://codepen.io/rockykev/pen/QWbppvV?editors=0100"
+                target="_blank"
+                >Example</a
+              >
+            </p>
+          </section>
+
+          <section>
+            <p>Slack Bot</p>
+            <p>
+              <img src="images/lambda-slack.png" />
+            </p>
+          </section>
+
+          <section>
+            <p>Slack Bot Blueprint</p>
+            <p>
+              <img src="images/lambda-slack-blueprint.png" />
+            </p>
+          </section>
+
+          <section>
+            <p>
+              Resize Images
+              <a
+                href="https://aws.amazon.com/blogs/compute/resize-images-on-the-fly-with-amazon-s3-aws-lambda-and-amazon-api-gateway/"
+                >link</a
+              >
+            </p>
+            <p>
+              <img src="images/lambda-photo.png" />
+            </p>
+          </section>
+
+          <section>
+            <p><img src="images/apps-word-to-pdf.png" /></p>
+          </section>
+
+          <section>
+            <p><img src="images/app-youtube.png" /></p>
+          </section>
+        </section>
+
+        <!-- BEFORE SERVERLESS         -->
+        <section>
+          <section>
+            <p>
+              But 🗿🔑 I build websites, not apis.
+            </p>
+          </section>
+
+          <section>
+            <p>
+              <img src="images/serverless.jpeg" />
+              Source:
+              https://www.gocd.org/2017/06/26/serverless-architecture-continuous-delivery/
+            </p>
+          </section>
+
+          <section>
+            <p>
+              <img src="images/serverless.jpeg" />
+              Source:
+              https://www.gocd.org/2017/06/26/serverless-architecture-continuous-delivery/
+            </p>
+          </section>
+
+          <section>
+            <p>Stage 1:</p>
+
+            <p>
+              <img src="images/windows-10-webservers.png" />
+            </p>
+          </section>
+
+          <section>
+            <p>
+              While your computer is a webserver, you try to 🎮 and performance
+              becomes 📉.
+            </p>
+          </section>
+
+          <section>
+            <p>Stage 2:</p>
+            <p>
+              <img src="images/servers.jpg" />
+            </p>
           </section>
 
           <section>
             <ul>
-              <li>2015 - present. A ton of new features land in ES6 changing the way
-              modern JS devs write their code.</li>
-              <li>
-                2015. let/const, arrow
-                functions, classes, promises. Transpilers like Babel and Typescript.
-              </li>
-              <li>
-                2016 ES7. We get minor changes, like Array.includes(). Most
-                importantly, ECMA is now making small changes on an annual basis.
-              </li>
-              <li>2017 ES8. We get Async Await!</li>
-              <li>
-                2018 ES9. We get Rest/Spread syntax!
-              </li>
+              <li>Time: Who loves updating?</li>
+              <li>Hardware: Potential failures. Power outage.</li>
+              <li>Security: Not just viruses, but break-ins.</li>
             </ul>
+          </section>
+
+          <section>
+            <p>Stage 3:</p>
+            <p>
+              <img src="images/Web-Hosting-Services-1.jpg" />
+            </p>
+          </section>
+
+          <section>
+            <p>
+              <img src="images/cloud-services.png" />
+            </p>
+          </section>
+
+          <section>
+            <p>
+              <img src="images/im-just-frontend.png" />
+            </p>
           </section>
         </section>
 
-          <!-- HOW DID JS BECOME SO POPULAR         -->
-        <section>
-          <section>
-            <img src="images/top-languages.png" />
-            <p><a href="https://octoverse.github.com/#top-languages" target="_blank">Github Octoverse</a></p>
-          </section>
-
-          <section>
-            <p>Laurie Voss</p>
-            <img src="images/laurie-voss.jpg" />
-          </section>
-
-          <section>
-            <h3> How did JS become so popular </h3>
-            <ul>
-              <li class="fragment">
-                Google maps and AJAX. AJAX made Javascript mainstream again,
-                inspired by Gmail (2004) and google maps (2005).
-              </li>
-              <li class="fragment">
-                NodeJS introduced a single language for full-stack development.
-              </li>
-              <li class="fragment">NPM packages.</li>
-              <li class="fragment">
-                Frameworks that follow a 'write once work everywhere policy'.
-              </li>
-            </ul>
-          </section>
-        </section>
-        <!-- What can JS do now?         -->
+        <!-- AWS Lambda        -->
 
         <section>
           <section>
@@ -293,9 +364,19 @@
 
           <section>
             <h1>Game development</h1>
-            <img src="images/phaser.jpg" /> 
-            <p><a href="https://teamtreehouse.com/library/introducing-javascript" target="_blank">Team Treehouse</a>,
-            <a href="https://academy.zenva.com/product/complete-phaser-game-development-bundle/" target="_blank">bundle</a></p>
+            <img src="images/phaser.jpg" />
+            <p>
+              <a
+                href="https://teamtreehouse.com/library/introducing-javascript"
+                target="_blank"
+                >Team Treehouse</a
+              >,
+              <a
+                href="https://academy.zenva.com/product/complete-phaser-game-development-bundle/"
+                target="_blank"
+                >bundle</a
+              >
+            </p>
           </section>
 
           <section>
@@ -304,10 +385,12 @@
               href="https://rockykev.github.io/threejs-testanimation/index-live"
               target="_blank"
               >example</a
-            >,             <a
-            href="https://threejs.org/docs/#manual/en/introduction/Useful-links"
-            target="_blank"
-            >docs</a>
+            >,
+            <a
+              href="https://threejs.org/docs/#manual/en/introduction/Useful-links"
+              target="_blank"
+              >docs</a
+            >
           </section>
 
           <section>
@@ -335,33 +418,52 @@
             <h1>Occulus Rift</h1>
             <img src="images/React360.png" />
             <p>
-              
-              <a href="https://developer.oculus.com/documentation/oculus-browser/react360-intro/" target="_blank">Docs</a>,
-              <a href="https://www.lynda.com/learning-paths/Web/build-a-virtual-reality-application-with-react" target="_blank">Lynda</a>
+              <a
+                href="https://developer.oculus.com/documentation/oculus-browser/react360-intro/"
+                target="_blank"
+                >Docs</a
+              >,
+              <a
+                href="https://www.lynda.com/learning-paths/Web/build-a-virtual-reality-application-with-react"
+                target="_blank"
+                >Lynda</a
+              >
             </p>
-
           </section>
 
           <section>
             <h1>Drones</h1>
             <img src="images/drone.png" />
-            <p> <a href="https://www.youtube.com/watch?v=JzFvGf7Ywkk" target="_blank">Wes</a>, <a href="https://cascadiajs.com/talks/controlling-a-swarm-of-drones-with-javascript/" target="_blank">another talk</a>, <a href="https://github.com/wesbos/javascript-drones" target="_blank">getting started</a></p>
+            <p>
+              <a
+                href="https://www.youtube.com/watch?v=JzFvGf7Ywkk"
+                target="_blank"
+                >Wes</a
+              >,
+              <a
+                href="https://cascadiajs.com/talks/controlling-a-swarm-of-drones-with-javascript/"
+                target="_blank"
+                >another talk</a
+              >,
+              <a
+                href="https://github.com/wesbos/javascript-drones"
+                target="_blank"
+                >getting started</a
+              >
+            </p>
           </section>
 
           <section>
             <h1>Let's not forget...</h1>
           </section>
 
-
           <section>
             <h1>POPUPS!</h1>
             <img src="images/popups.gif" />
           </section>
-
-
         </section>
 
-        <!-- JS FUTURE         -->
+        <!-- Web development        -->
         <section>
           <section>
             <h1>The future of JS?</h1>
@@ -376,19 +478,49 @@
             <h3>Via Richard Feldman</h3>
             <a href="https://www.youtube.com/watch?v=24tQRwIRP_w">link</a>
             <ul>
-              <li>Typescript will continue to grow (<a href="https://madnight.github.io/githut/#/pull_requests/2019/4" target="_blank">growth</a>)</li>
-              <li>Web Assembly (<a href="https://www.figma.com/blog/webassembly-cut-figmas-load-time-by-3x/" target="_blank">Figma</a> and <a href="http://www.wasmrocks.com/topic/330/doom-3-running-in-the-browser-using-emscripten-webassembly" target="_blank">Doom</a>)</li>
+              <li>
+                Typescript will continue to grow (<a
+                  href="https://madnight.github.io/githut/#/pull_requests/2019/4"
+                  target="_blank"
+                  >growth</a
+                >)
+              </li>
+              <li>
+                Web Assembly (<a
+                  href="https://www.figma.com/blog/webassembly-cut-figmas-load-time-by-3x/"
+                  target="_blank"
+                  >Figma</a
+                >
+                and
+                <a
+                  href="http://www.wasmrocks.com/topic/330/doom-3-running-in-the-browser-using-emscripten-webassembly"
+                  target="_blank"
+                  >Doom</a
+                >)
+              </li>
               <li>
                 That NPM will still be a major force (if not NPM then Github
-                Packages or Yarn) (<a href="https://en.wikipedia.org/wiki/Npm_(software)" target="_blank">wiki</a>)
+                Packages or Yarn) (<a
+                  href="https://en.wikipedia.org/wiki/Npm_(software)"
+                  target="_blank"
+                  >wiki</a
+                >)
               </li>
             </ul>
           </section>
         </section>
 
+        <!-- LAST WORDS         -->
         <section>
-          <h2> Last words: </h2>
-          <p>In the words of Youtuber <a href="https://www.youtube.com/channel/UCsBjURrPoezykLs9EqgamOA" target="_blank">Fireship</a>:</p>
+          <h2>Last words:</h2>
+          <p>
+            In the words of Youtuber
+            <a
+              href="https://www.youtube.com/channel/UCsBjURrPoezykLs9EqgamOA"
+              target="_blank"
+              >Fireship</a
+            >:
+          </p>
           <p>Always bet on Javascript.</p>
         </section>
       </div>
