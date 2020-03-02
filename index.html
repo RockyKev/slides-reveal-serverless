@@ -45,7 +45,7 @@
         </div>
 
         <section>
-          <h3>Getting Comfortable with Serverless</h3>
+          <h5>Getting Comfortable with Serverless</h5>
           <p>
             March 2020 Presentation
           </p>
@@ -53,12 +53,12 @@
         </section>
 
         <section>
-          <h2>If you want to follow along....</h2>
+          <h5>If you want to follow along....</h5>
           <img src="images/get-to-aws.png" style="width:50%" />
         </section>
 
         <section>
-          <h2>If you want to follow along....</h2>
+          <h5>If you want to follow along....</h5>
           <img src="images/get-to-node.png" style="width:50%" />
         </section>
 
@@ -118,12 +118,27 @@
           </section>
 
           <section>
+            <p>
+              With serverless, you write code and upload it to a serverless
+              provider platform ( like AWS Lambda, for example). Your code runs
+              when an event triggers it. The provider creates the environment
+              for you when you need it and then tears it down when you don’t.
+              Therefore, serverless doesn’t really mean no servers; it simply
+              means that you don’t need to worry about them yourself.
+            </p>
+            <p class="small-text">
+              Shamelessly stolen from
+              https://stackify.com/aws-lambda-serverless/
+            </p>
+          </section>
+
+          <section>
             <img src="images/lambda-logo.png" />
             <p>This isn't the half-life symbol.</p>
           </section>
 
           <section>
-            <img src="images/lambda-spin.png" />
+            <img src="images/lambda-spin.png" style="width:50%" />
             <p class="small-text">Actual representation of AWS Lambda.</p>
           </section>
 
@@ -135,8 +150,8 @@
 
           <section>
             <h2>Backend devs...</h2>
-            <p>
-              <img src="images/backend-be-like.jpg" />
+            <img src="images/backend-be-like.jpg" />
+            <p class="small-text">
               Serverless for
               <a
                 href="https://read.acloud.guru/serverless-is-a-state-of-mind-717ef2088b42"
@@ -146,55 +161,34 @@
           </section>
 
           <section>
-            <h2>Frontend devs...</h2>
+            <h2>Frontend devs</h2>
             <p>
-              who wants to focus on deploying websites...
-              <img src="images/push-button.gif.gif" />
+              who wants to focus on deploying apps/websites...
+              <img src="images/push-button.gif" />
             </p>
           </section>
 
           <section>
             <p>
-              “Focus on your application, not the infrastructure”. ~Faizan
-              Bashir
+              “Focus on your application, not the infrastructure”.
+            </p>
+            <p class="small-text">
+              ~Faizan Bashir
               (https://hackernoon.com/what-is-serverless-architecture-what-are-its-pros-and-cons-cc4b804022e9)
             </p>
-          </section>
-
-          <section>
-            <p>
-              Remember that "serverless" is a marketing term.
-            </p>
-          </section>
-
-          <section>
-            <p>
-              So serverless is just an extension of the Cloud. Cloud is just
-              someone elses computer. They are handling all of the hardware
-              configuration and slicing the computer up into different parts so
-              that everyone can use it in their own little piece. Serverless is
-              just taking that to the next level. In the Cloud you dont have to
-              worry about a lot of hardware problems but you still have to worry
-              about all sorts of configuration problems. In Serverless you no
-              don’t have to worry about hardware issues or server configuration
-              stuff. This of course creates its own issues. if you need that
-              level of control over your application then its probably not for
-              what you are doing.
-            </p>
-            <p>via Adam Martinek</p>
           </section>
         </section>
 
         <!-- PLZ EXPLAIN         -->
         <section>
           <section>
-            <img src="images/cool-cool.gif" />
+            <img src="images/cool-cool.gif" style="width: 50%;" />
           </section>
 
           <section>
             <p>
-              What's Lambda and how does this fit into serverless? (Explain like
-              I'm 5)
+              What's "Lambda" and what are the usecases of serverless? (Explain
+              like I'm 5) 🤷‍♂️
             </p>
           </section>
 
@@ -217,7 +211,7 @@
           <section>
             <p>Slack Bot</p>
             <p>
-              <img src="images/lambda-slack.png" />
+              <img src="images/lambda-slack-better.png" />
             </p>
           </section>
 
@@ -230,14 +224,14 @@
 
           <section>
             <p>
+              <img src="images/lambda-photo.png" />
+            </p>
+            <p class="small-text">
               Resize Images
               <a
                 href="https://aws.amazon.com/blogs/compute/resize-images-on-the-fly-with-amazon-s3-aws-lambda-and-amazon-api-gateway/"
-                >link</a
+                >how-to</a
               >
-            </p>
-            <p>
-              <img src="images/lambda-photo.png" />
             </p>
           </section>
 
@@ -257,20 +251,24 @@
               But 🗿🔑 I build websites, not apis.
             </p>
             <p>
-              So... websites?
+              So tell me about serverless for front-end?
             </p>
           </section>
 
           <section>
-            <p>
-              <img src="images/serverless.jpeg" />
+            <img src="images/serverless.jpeg" style="width:50%" />
+            <p class="small-text">
               Source:
               https://www.gocd.org/2017/06/26/serverless-architecture-continuous-delivery/
             </p>
           </section>
 
           <section>
-            <p>Stage 1: Setting up your server with your computer</p>
+            <p>Hypothetical: Setting up a website 2000s-2020s style</p>
+          </section>
+
+          <section>
+            <p>2000's ish: Setting up your server with your computer</p>
 
             <p>
               <img src="images/windows-10-webservers.png" />
@@ -285,7 +283,7 @@
           </section>
 
           <section>
-            <p>Stage 2: BIGGER</p>
+            <p>2000's ish: MORE COMMITMENT.</p>
             <p>
               <img src="images/servers.jpg" />
             </p>
@@ -320,7 +318,7 @@
 
           <section>
             <p>
-              <img src="images/im-just-frontend.png" />
+              <img src="images/im-just-frontend.png" style="width: 50%;" />
             </p>
           </section>
 
@@ -336,6 +334,10 @@
           </section>
 
           <section>
+            <img src="images/push-button.gif" />
+          </section>
+
+          <section>
             <h2>Netlify</h2>
             <p>
               <a
@@ -343,77 +345,74 @@
                 target="_blank"
                 >Do it Gatsby!</a
               >
+              <a
+                href="https://github.com/RockyKev/gatsby2-shopify"
+                target="_blank"
+                >github repo w/out keys</a
+              >
             </p>
           </section>
         </section>
 
         <!-- AWS Lambda        -->
-
-        <section>
-          <p>Okay let's talk about Lambda (and S3).</p>
-          <p>
-            <a
-              href="https://us-west-2.console.aws.amazon.com/console/home?region=us-west-2"
-              target="_blank"
-              >Lambda (Hello World but DICE!)</a
-            >
-            |
-            <a href="https://aws.amazon.com/lambda/pricing/" target="_blank"
-              >Pricing</a
-            >
-            |
-            <a href="https://pastebin.com/raw/3BECbErL" target="_blank"
-              >Random Dice</a
-            >
-          </p>
-        </section>
-
-        <!-- Web development        -->
         <section>
           <section>
-            <h1>The future of JS?</h1>
-            <a
-              href="https://github.com/tc39/proposals/blob/master/finished-proposals.md"
-              target="_blank"
-              >Proposals
-            </a>
+            <p>Okay hopefully you managed to set up AWS.</p>
           </section>
 
           <section>
-            <h3>Via Richard Feldman</h3>
-            <a href="https://www.youtube.com/watch?v=24tQRwIRP_w">link</a>
-            <ul>
-              <li>
-                Typescript will continue to grow (<a
-                  href="https://madnight.github.io/githut/#/pull_requests/2019/4"
-                  target="_blank"
-                  >growth</a
-                >)
-              </li>
-              <li>
-                Web Assembly (<a
-                  href="https://www.figma.com/blog/webassembly-cut-figmas-load-time-by-3x/"
-                  target="_blank"
-                  >Figma</a
-                >
-                and
-                <a
-                  href="http://www.wasmrocks.com/topic/330/doom-3-running-in-the-browser-using-emscripten-webassembly"
-                  target="_blank"
-                  >Doom</a
-                >)
-              </li>
-              <li>
-                That NPM will still be a major force (if not NPM then Github
-                Packages or Yarn) (<a
-                  href="https://en.wikipedia.org/wiki/Npm_(software)"
-                  target="_blank"
-                  >wiki</a
-                >)
-              </li>
-            </ul>
+            There's a lot of services for serverless. <br />
+            <a
+              href="https://serverless.css-tricks.com/services/major"
+              target="_blank"
+              >serverless.css-tricks.com</a
+            >
           </section>
+
+          <section>
+            <p>Lambda (and S3).</p>
+            <p>
+              <a
+                href="https://us-west-2.console.aws.amazon.com/console/home?region=us-west-2"
+                target="_blank"
+                >Lambda (Hello World but DICE!)</a
+              >
+              |
+              <a href="https://aws.amazon.com/lambda/pricing/" target="_blank"
+                >Pricing</a
+              >
+              |
+              <a href="https://pastebin.com/raw/3BECbErL" target="_blank"
+                >Random Dice</a
+              >
+            </p>
+          </section>
+
+          <section>
+            <p>Lambda (and S3).</p>
+            <img src="images/aws-serverless.png" style="background: white;" />
+          </section>
+
+          <section>
+            <p>SERVERLESS.COM's Serverless Components Framework (waaay more complicated)</p>
+            <img src="images/serverless-framework.png" />
+            <a href="https://github.com/serverless-components" target="_blank">repo</a>
+          </section>
+
+          <section id="fragments">
+            <h2>Deploying it in production</h2>
+              <ul>
+                <li class="fragment">You can separate deploys to dev💻 or prod🌎</li>
+                <li class="fragment">Domain names/SLL with Route 53🚸</li>
+                <li class="fragment">Set up distribution with CloudFront</li>
+                <li class="fragment">Set up cache-busting in CloudFront</li>
+              </ul>
+            </section>
+          </section>
+
+
         </section>
+
 
         <!-- LAST WORDS         -->
         <section>
